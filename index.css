@@ -1,0 +1,190 @@
+/*Cadre de base body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", "Calibri Light", sans-serif;
+}
+
+/*Annimation jeton puissance 4 Safari et chrome*/
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+                transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+                transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+                transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+                transform: translate3d(0, 5px, 0);
+    }
+
+    0% {
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+
+/*Annimation jeton puissance 4 firefox opera ...*/
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+                transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+                transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+                transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+                transform: translate3d(0, 5px, 0);
+    }
+
+    0% {
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+
+/*Affichage style taille tablette et pc*/
+@media screen and (min-width: 500px) {
+
+    .centre {
+        background-color: #ffff9f;
+        text-align: center;
+        display: block;
+        width: 500px;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #TexteAnnonce {
+        margin: 50px auto;
+        font-size: 20px;
+    }
+
+    table {
+        margin: 0 auto 50px;
+    }
+
+    td {
+        background-color: blue;
+        width: 75px;
+        height: 75px;
+        position: relative;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .joueur1, .joueur2 {
+        border-radius: 50px 50px 50px 50px;
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+
+        -webkit-animation:  bounceInDown 0.5s 1;
+        -moz-animation:     bounceInDown 0.5s 1;
+        -o-animation:       bounceInDown 0.5s 1;
+        animation:          bounceInDown 0.5s 1;
+    }
+
+    .joueur1 {
+        background-color: red;
+    }
+
+    .joueur2 {
+        background-color: yellow;
+    }
+
+    .reset {
+        margin-bottom: 50px;
+        width: 50px;
+        height: 25px;
+    }
+}
+
+/*Affichage style smartphone*/
+@media screen and (max-width: 500px){
+
+    .centre {
+        background-color: #ffff9f;
+        text-align: center;
+        display: block;
+        width: 300px;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #TexteAnnonce {
+        margin: 50px auto;
+        font-size: 20px;
+    }
+
+    table {
+        margin: 0 auto 50px;
+    }
+
+    td {
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .joueur1, .joueur2 {
+        border-radius: 50px 50px 50px 50px;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+
+        -webkit-animation:  bounceInDown 0.5s 1;
+        -moz-animation:     bounceInDown 0.5s 1;
+        -o-animation:       bounceInDown 0.5s 1;
+        animation:          bounceInDown 0.5s 1;
+    }
+
+    .joueur1 {
+        background-color: red;
+    }
+
+    .joueur2 {
+        background-color: yellow;
+    }
+
+    .reset {
+        margin-bottom: 50px;
+        width: 50px;
+        height: 25px;
+    }
+}
